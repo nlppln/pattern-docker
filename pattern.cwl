@@ -21,9 +21,9 @@ inputs:
       position: 1
   language:
     type: string?
+    default: en
     inputBinding:
       prefix: -l
-      default: en
 
 outputs:
   out_files:
