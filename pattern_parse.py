@@ -62,7 +62,7 @@ def pattern_parse(in_file, language, out_dir):
             }
 
     out_file = out_file_name(out_dir, in_file.name, 'json')
-    create_dirs(out_file)
+    create_dirs(out_file, if_file=True)
     with codecs.open(out_file, 'wb', encoding='utf-8') as f:
         json.dump({'header': header, 'tokens': tokens}, f, indent=4)
 
