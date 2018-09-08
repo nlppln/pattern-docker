@@ -26,7 +26,7 @@ inputs:
       prefix: -l
 
 outputs:
-  out_files:
+  saf:
     type: File
     outputBinding:
       glob: "*.json"
